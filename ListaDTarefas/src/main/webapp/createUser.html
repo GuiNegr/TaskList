@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Style/CadStyle.css">
+</head>
+<body>
+   <main>
+    <div class="divMain">
+        <h1>CADASTRE</h1>
+        <div class="cad">
+            <form action="/CreateUser" method="post">
+                <label for="userName">Nome</label>
+                <input id = "userName" name = "userName" type="text" required>
+                <label for="userEmail">Email</label>
+                <input id = "userEmail" name = "userEmail" type="text" required>
+                <label for="userPass">Senha</label>
+                <input id = "userPass" name = "userPass" type="password" required>
+            <div class="btn">
+               <input type="submit" value="Cadastrar">
+            </div>
+        </div>
+        </form>
+       </div>
+   </main>
+</body>
+</html>
