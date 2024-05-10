@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: rgb(179, 131, 211);
+    color: wheat;
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-login {
+    width: 100vw;
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-div {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(247, 246, 197);
+    font-family: impact;
+    font: bold;
+    letter-spacing: 2px;
+}
+
+.right-login {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    color: wheat;
+    font: bold;
+    font-family: impact;
+    letter-spacing: 2px;
+    font-size: 20pt;
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #56447B;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.432);
+    margin: 20px;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+
+.textfield > input {
+    width: calc(100% - 30px);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #7C6C9A;
+    color: #FFFFFF;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.432);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: rgba(211, 255, 253, 0.712);
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: rgba(211, 255, 253, 0.712);
+}
+
+.btn-login {
+    width: calc(100% - 30px);
+    padding: 16px 0px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #56447B;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgba(124, 238, 213, 0.712);
+    margin: auto;
+}
+
+.btn-login:hover{
+    background-color: #c2b0e6;
+}
+
+.leftImage{
+    width: 30vw;
+}

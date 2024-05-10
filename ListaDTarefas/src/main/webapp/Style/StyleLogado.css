@@ -1,0 +1,42 @@
+body{
+    font-family: impact;
+    background-color: rgb(179, 131, 211);
+    color: wheat;
+    flex-direction: column;
+    text-shadow: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.navDiv{
+    width: 100%;
+    height: 40px;
+    background-color: wheat;
+}
+
+.navUl{
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(161, 94, 248);
+    margin: 5px 10px;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(88, 11, 160);
+}
+.imgDiv{
+    width: 25vw;
+}
+h1{
+    font-size: 40pt;
+    letter-spacing: 2px;
+}
+h2{
+    font-size: 20pt;
+    letter-spacing: 2px;
+}

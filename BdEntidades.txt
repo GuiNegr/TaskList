@@ -1,0 +1,16 @@
+entidades
+LOGIN - ID,USER_EMAIL,USER_SENHA
+LISTA - ID,TAREFA,STATUS,FKID
+
+create table userTarefas(
+ID INT PRIMARY KEY AUTO_INCREMENT,
+username varchar(50) not null,
+USER_EMAIL VARCHAR(50) NOT NULL,
+USER_SENHA VARCHAR(50) NOT NULL
+);
+
+create table task(
+id int primary key auto_increment,
+nametask varchar(50) not null,
+statustask varchar(50) not null
+);

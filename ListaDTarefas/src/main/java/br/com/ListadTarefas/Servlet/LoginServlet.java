@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/CreateUser")
-public class CreateUserServlet extends HttpServlet{
+@WebServlet("/Login")
+public class LoginServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -28,9 +28,12 @@ public class CreateUserServlet extends HttpServlet{
         UserModel userModel = new UserModel(id,username,userEmail,userPass);
         userDAO userDAO = new userDAO();
 
-        userDAO.CreateUser(userModel);
+        if (userDAO.check(userModel)){
+            resp.sendRedirect("HomeLogado.html");
+        }else {
+            req.getRequestDispatcher("createUser.html").forward(req,resp);
+        }
 
-        req.getRequestDispatcher("Login.html").forward(req,resp);
 
     }
 }
