@@ -1,10 +1,59 @@
 body{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: rgb(179, 131, 211);
-    color: wheat;
+    margin:0;
+    font-family: Impact;
+    background-color:#804ff3;
+}
+
+main{
+    width: 80%;
+    text-align: right;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    justify-content: center;
+    background-color: rgb(248, 232, 202);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.5);
+}
+
+label{
+    text-align: left;
+    display: block;
+    margin-top: 5px;
+    color: #804ff3;
+    font-size: 20px;
+    font-weight:lighter ;
+    
+}
+
+input[type="text"],
+input[type="password"],
+select{
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #402D65;
+    border-radius: 4px;   
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    box-sizing: content-box;
+    border:#804ff3;
+    font-weight: bolder;
+    border-radius: 4px;
+    background-color: #804ff3;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #804ff3;
+}
+
+input[type="submit"]:hover{
+    background-color: #402D65;
 }
 
 .divMain{
@@ -16,48 +65,8 @@ body{
 
 .divMain >h1{
     letter-spacing: 5px;
-    font-size: 70pt;
+    font-size: 30pt;
     font-family: impact;
     font-weight: bold;
-    border-color: white;
-}
-.divH1 >h2{
-    letter-spacing: 2px ;
-    font-size: 20pt;
-    font-family: Impact;
-    font-weight: normal;
-}
-.divImg{
-    width: 25vw;
-}
-
-.diInput{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.btnLogin{
-    cursor: pointer;
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    font-family: impact;
-    font-weight: normal;
-    font-size: 20pt;
-    letter-spacing: 2px;
-    color: white;
-}
-
-.btnCad{
-    cursor: pointer;
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    font-family: impact;
-    font-weight: normal;
-    font-size: 20pt;
-    letter-spacing: 2px;
-    color: white;
+    color: #804ff3;
 }

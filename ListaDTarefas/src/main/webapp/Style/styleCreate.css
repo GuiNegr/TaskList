@@ -1,7 +1,14 @@
 body{
-    margin:0;
+    padding:0;
+    margin:10px;
     font-family: Impact;
     background-color:#804ff3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 main{
@@ -22,8 +29,7 @@ label{
     margin-top: 5px;
     color: #804ff3;
     font-size: 20px;
-    font-weight:lighter ;
-    
+    font-weight:lighter;
 }
 
 input[type="text"],
@@ -38,8 +44,8 @@ select{
 }
 
 input[type="submit"]{
-    width: 100%;
-    padding: 10px;
+    width: 50%;
+    padding:10px;
     box-sizing: content-box;
     border:#804ff3;
     font-weight: bolder;
@@ -55,14 +61,7 @@ input[type="submit"]:hover{
     background-color: #402D65;
 }
 
-.divMain{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.divMain >h1{
+h1{
     letter-spacing: 5px;
     font-size: 30pt;
     font-family: impact;

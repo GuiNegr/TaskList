@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    justify-content: space-around;
+    background-color: rgb(179, 131, 211);
+    color: wheat;
+}
+.divMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    width: 100vw;
+    height: calc(100vh - 120px);
+}
+.divRigth{
+    width: 100vw;
+    height: calc(100vh - 120px);
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    font-size: 20pt;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.label{
+    text-align: left;
+    display: block;
+    margin-top: 5px;
+    color: #804ff3;
+    font-size: 20px;
+    font-weight:lighter ;
+}
