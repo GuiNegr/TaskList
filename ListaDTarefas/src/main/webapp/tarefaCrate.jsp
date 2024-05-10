@@ -21,13 +21,17 @@
 
     
                     <div class="textfield">
-                        <label for="nomeTask">Nome Task</label>
+                        <label for="nomeTask">Nome da Tarefa</label>
                         <input id = "nomeTask" name = "nomeTask" type="text">
                     </div>
                     <div class="textfield">
                           
-                    <label for="statusTask">Status</label>
-                    <input type="text" name="statusTask" id="statusTask">
+                    <label for="statusTask">Status da tarefa</label>
+                    <select name="statusTask" id="statusTask" class="statusTask">
+                        <option value="completa" class="option">Completa</option>
+                        <option value="inicializada" class="option">Inicializada</option>
+                        <option value="terminada"class="option">Finalizada</option>
+                    </select>
                     </div>
                     <button class="btn-login">Criar</button>
                 </form>

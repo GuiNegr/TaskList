@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: rgb(179, 131, 211);;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+H1{
+    font-family: impact;
+    font-size: 40pt;
+    color: wheat;
+    letter-spacing: 2px;
+}
+
+.divCTable{
+    font-family: impact;
+    font-size: 20pt;
+    font-weight: 0;
+    letter-spacing: 1px;
+    color: rgb(81, 13, 145);
+    background-color: rgb(131, 67, 204);
+}
+
+.table{
+    border-collapse: collapse;
+}
+.table td,table th{
+    border-color: wheat;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}

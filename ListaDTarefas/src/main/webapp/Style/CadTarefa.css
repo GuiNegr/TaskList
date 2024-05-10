@@ -44,7 +44,6 @@ body {
 }
 
 .card-login {
-    color: wheat;
     font: bold;
     font-family: impact;
     letter-spacing: 2px;
@@ -56,8 +55,8 @@ body {
     align-items: left;
     flex-direction: column;
     padding: 30px 35px;
-    background: #56447B;
-    border-radius: 20px;
+    background: wheat;
+    border-radius: 5px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.432);
     margin: 20px;
 }
@@ -75,9 +74,9 @@ body {
 .textfield > input {
     width: calc(100% - 30px);
     border: none;
-    border-radius: 10px;
+    border-radius: 1px;
     padding: 15px;
-    background-color: #7C6C9A;
+    background-color: #8d5ce9;
     color: #FFFFFF;
     font-size: 12pt;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.432);
@@ -86,12 +85,12 @@ body {
 }
 
 .textfield > label {
-    color: rgba(211, 255, 253, 0.712);
+    color: rgba(76, 0, 255, 0.712);
     margin-bottom: 10px;
 }
 
 .textfield > input::placeholder {
-    color: rgba(211, 255, 253, 0.712);
+    color: rgba(76, 0, 255, 0.712);
 }
 
 .btn-login {
@@ -104,7 +103,7 @@ body {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #56447B;
+    background-color: #8d5ce9;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px rgba(124, 238, 213, 0.712);
     margin: auto;
@@ -117,3 +116,26 @@ body {
 .leftImage{
     width: 30vw;
 }
+
+.statusTask{
+    font-family: impact;
+    letter-spacing: 3px;
+    width: calc(100% - 30px);
+    border: none;
+    padding: 15px;
+    background-color: #8d5ce9;
+    color: #7801ff;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.432);
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.statusTask:hover{
+    border-color: #6e32df;
+}
+
