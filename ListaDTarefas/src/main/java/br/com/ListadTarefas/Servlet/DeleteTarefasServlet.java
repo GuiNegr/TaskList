@@ -9,27 +9,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 
-@WebServlet("/CreateTarefa")
-public class CreateTarefasServlet extends HttpServlet{
+@WebServlet("/DeleteTarefa")
+public class DeleteTarefasServlet extends HttpServlet {
+
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String id = req.getParameter("id");
-        String nomeTask = req.getParameter("nomeTask");
-        String statusTask = req.getParameter("statusTask");
 
-        TarefasDao tarefasdao = new TarefasDao();
-        TarefasModel model = new TarefasModel(id,nomeTask,statusTask);
+        TarefasDao tarefasDao = new TarefasDao();
+        tarefasDao.deleteById(id);
 
-        if (id.isBlank()){
-            tarefasdao.createTarefas(model);
-        }else {
-            tarefasdao.updateTarefas(model);
-        }
+        resp.sendRedirect("/List");
 
-        resp.sendRedirect("HomeLogado.html");
     }
-
 }

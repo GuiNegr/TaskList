@@ -46,4 +46,40 @@ a{
     justify-content: center;
     text-decoration: none;
     cursor: pointer;
+    color: rgb(93, 24, 158);
+}
+
+a:hover{
+    color: rgb(196, 160, 229);
+    outline: none;
+    margin: auto;
+    box-shadow: 0px 10px 40px -12px rgb(162, 120, 240);
+}
+
+.botao{
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(205, 112, 233);
+    color: rgb(93, 24, 158);
+    outline: none;
+    margin: auto;
+    box-shadow: 0px 10px 40px -12px rgb(162, 120, 240);
+}
+.botao:hover{
+    background-color: rgb(149, 68, 224);
+}
+.imgDiv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 2vw;
+}
+
+.formAction{
+    display: flex;
+    flex-direction: column;
 }

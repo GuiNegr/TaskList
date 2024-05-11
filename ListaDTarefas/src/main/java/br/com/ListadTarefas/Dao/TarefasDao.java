@@ -57,4 +57,36 @@ public class TarefasDao {
             return Collections.emptyList();
         }
     }
+
+    public void deleteById(String id){
+        String SQL = "DELETE TASK WHERE ID = ?";
+        try{
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1,id);
+            preparedStatement.execute();
+            connection.close();
+
+        }catch (Exception e){
+            System.out.println("Error: "+e.getMessage());
+        }
+    }
+
+    public void updateTarefas(TarefasModel task){
+        String sql = "UPDATE TASK SET NAMETASK = ? , STATUSTASK = ? WHERE ID = ? ";
+
+        try{
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, task.getNametask());
+            preparedStatement.setString(2, task.getStatusTask());
+            preparedStatement.setString(3, task.getId());
+            preparedStatement.execute();
+            connection.close();
+
+        }catch (Exception e){
+            System.out.println("ERROR:"+e.getMessage());
+        }
+    }
 }

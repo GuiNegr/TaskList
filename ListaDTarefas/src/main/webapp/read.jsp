@@ -15,13 +15,23 @@
             <tr>
                 <th>ID</th>
                 <th>TAREFAS</th>
-                <th>STATUS DA TAREFA</th>   
+                <th>STATUS DA TAREFA</th>
+                <th>Actions</th>
             </tr>
             <c:forEach var="tasks" items="${tasks}">
                 <tr>
                     <td>${tasks.id}</td>
                     <td>${tasks.nametask}</td>
                     <td>${tasks.statusTask}</td>
+                    <td>
+                        <form action="/DeleteTarefa" method="post" class="formAction">
+                            <input type="hidden" name="id" value="${tasks.id}">
+                            <button type="submit" class="botao">
+                                <img src="Imagens/trash-alt-svgrepo-com.svg" alt="" class="imgDiv">
+                            </button>
+                            <a href="tarefaCrate.jsp?id=${tasks.id}&nomeTask=${tasks.nametask}&statusTask=${tasks.statusTask}">Update</a>
+                        </form>
+                    </td>
                 </tr>
             </c:forEach>
         </table>

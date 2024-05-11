@@ -19,18 +19,18 @@
     
                 <form action="/CreateTarefa" method="post">
 
-    
+                    <input id = "id" name = "id" type="text" hidden value="${param.id}">
                     <div class="textfield">
                         <label for="nomeTask">Nome da Tarefa</label>
-                        <input id = "nomeTask" name = "nomeTask" type="text">
+                        <input id = "nomeTask" name = "nomeTask" type="text" value="${param.nomeTask}">
                     </div>
                     <div class="textfield">
                           
                     <label for="statusTask">Status da tarefa</label>
-                    <select name="statusTask" id="statusTask" class="statusTask">
-                        <option value="completa" class="option">Completa</option>
-                        <option value="inicializada" class="option">Inicializada</option>
-                        <option value="terminada"class="option">Finalizada</option>
+                    <select name="statusTask" id="statusTask" class="statusTask" value="${param.statusTask}">
+                        <option value="completa" class="option">INICIALIZADA</option>
+                        <option value="inicializada" class="option">ESTAMOS NA METADE</option>
+                        <option value="terminada"class="option">FINALIZADA</option>
                     </select>
                     </div>
                     <button class="btn-login">Criar</button>
